@@ -11,15 +11,15 @@ server.route({
         reply('hello');
     }
 })
-
-server.route({
-    method: 'GET',
-    path: '/posts',
-    handler: function (request, reply) {
-
-        reply(Posts);
-    }
-});
+// 
+// server.route({
+//     method: 'GET',
+//     path: '/posts',
+//     handler: function (request, reply) {
+//
+//         reply(Posts);
+//     }
+// });
 
 server.start(function () {
     console.log('Server running at:', server.info.uri);
